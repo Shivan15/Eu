@@ -16,6 +16,10 @@ values(null, 'Unidade'),
 (null, 'Grama');
 
 insert into material
+values(null, 20, 2, 1, 'Óculos VR'),
+(null, 5, 2, 1, 'Aerógrafo');
+
+insert into material
 values(null, 500, 4, 1, 'Filamento'),
 (null, 250, 3, 1, 'Arduino');
 
