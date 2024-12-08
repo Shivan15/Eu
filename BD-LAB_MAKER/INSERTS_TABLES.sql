@@ -15,35 +15,33 @@ values(null, 'Unidade'),
 (null, 'Litro'),
 (null, 'Grama');
 
-insert into material
-values(null, 20, 2, 1, 'Óculos VR'),
-(null, 5, 2, 1, 'Aerógrafo');
-
-insert into material
-values(null, 500, 4, 1, 'Filamento'),
-(null, 250, 3, 1, 'Arduino');
+insert into material (id, qtd, nome, descr, stts, id_cat, id_uni_med)
+values(null, 500, 'Filamento', 'Material utilizado para impressão 3D, disponível em diferentes tipos e cores, proporcionando qualidade e resistência nas peças produzidas.', 1, 4, 1),
+(null, 250, 'Arduino', 'Placa de desenvolvimento de código aberto que permite a criação de diversos projetos eletrônicos, como automação e robótica.', 1, 3, 1),
+(null, 20, 'Óculos VR', 'Óculos de realidade virtual que proporcionam uma imersão em ambientes digitais, usados para jogos, simulações e entretenimento.', 1, 2, 1),
+(null, 5, 'Aerógrafo', 'Equipamento usado para aplicar tinta de forma controlada, muito utilizado em pinturas detalhadas, customizações e arte.', 1, 2, 1);
 
 INSERT INTO reserva (id, stts, solicitante, descr, dt, hr_i, hr_f, email, id_us) 
 VALUES (null, '1', 'Gabriel Lucas', 'Montagem de protótipos', '2024-12-10', '09:00:00', '11:00:00', 'gabriel.lucas@gmail.com', 1),
-(null, '0', 'Ana Clara', 'Revisão de projetos', '2024-12-11', '13:30:00', '15:30:00', 'ana.clara@gmail.com', 2),
+(null, '1', 'Ana Clara', 'Revisão de projetos', '2024-12-11', '13:30:00', '15:30:00', 'ana.clara@gmail.com', 2),
 (null, '1', 'João Silva', 'Aula de robótica', '2024-12-12', '08:00:00', '10:00:00', 'joao.silva@gmail.com', 1),
-(null, '0', 'Mariana Souza', 'Testes de componentes', '2024-12-13', '14:00:00', '16:00:00', 'mariana.souza@gmail.com', 2),
+(null, '1', 'Mariana Souza', 'Testes de componentes', '2024-12-13', '14:00:00', '16:00:00', 'mariana.souza@gmail.com', 2),
 (null, '1', 'Carlos Eduardo', 'Manutenção de equipamentos', '2024-12-14', '09:30:00', '11:30:00', 'carlos.eduardo@gmail.com', 1),
-(null, '0', 'Beatriz Alves', 'Organização do laboratório', '2024-12-15', '10:30:00', '12:30:00', 'beatriz.alves@gmail.com', 2),
+(null, '1', 'Beatriz Alves', 'Organização do laboratório', '2024-12-15', '10:30:00', '12:30:00', 'beatriz.alves@gmail.com', 2),
 (null, '1', 'Lucas Martins', 'Montagem de circuitos', '2024-12-16', '13:00:00', '15:00:00', 'lucas.martins@gmail.com', 1),
-(null, '0', 'Camila Ferreira', 'Preparação de materiais', '2024-12-17', '08:30:00', '10:30:00', 'camila.ferreira@gmail.com', 2),
+(null, '1', 'Camila Ferreira', 'Preparação de materiais', '2024-12-17', '08:30:00', '10:30:00', 'camila.ferreira@gmail.com', 2),
 (null, '1', 'Pedro Henrique', 'Testes de sensores', '2024-12-18', '09:00:00', '11:00:00', 'pedro.henrique@gmail.com', 1),
-(null, '0', 'Sofia Lima', 'Capacitação em Arduino', '2024-12-19', '14:30:00', '16:30:00', 'sofia.lima@gmail.com', 2),
+(null, '1', 'Sofia Lima', 'Capacitação em Arduino', '2024-12-19', '14:30:00', '16:30:00', 'sofia.lima@gmail.com', 2),
 (null, '1', 'Gabriel Lucas', 'Ajustes em projetos', '2024-12-20', '13:00:00', '15:30:00', 'gabriel.lucas@gmail.com', 1),
-(null, '0', 'Ana Clara', 'Organização do estoque', '2024-12-21', '08:30:00', '10:30:00', 'ana.clara@gmail.com', 2),
+(null, '1', 'Ana Clara', 'Organização do estoque', '2024-12-21', '08:30:00', '10:30:00', 'ana.clara@gmail.com', 2),
 (null, '1', 'João Silva', 'Capacitação em robótica', '2024-12-22', '09:00:00', '11:30:00', 'joao.silva@gmail.com', 1),
-(null, '0', 'Mariana Souza', 'Treinamento em montagem', '2024-12-23', '13:30:00', '15:30:00', 'mariana.souza@gmail.com', 2),
+(null, '1', 'Mariana Souza', 'Treinamento em montagem', '2024-12-23', '13:30:00', '15:30:00', 'mariana.souza@gmail.com', 2),
 (null, '1', 'Carlos Eduardo', 'Atualização de software', '2024-12-24', '10:00:00', '12:00:00', 'carlos.eduardo@gmail.com', 1),
-(null, '0', 'Beatriz Alves', 'Limpeza de equipamentos', '2024-12-25', '14:00:00', '16:00:00', 'beatriz.alves@gmail.com', 2),
+(null, '1', 'Beatriz Alves', 'Limpeza de equipamentos', '2024-12-25', '14:00:00', '16:00:00', 'beatriz.alves@gmail.com', 2),
 (null, '1', 'Lucas Martins', 'Preparação para aula', '2024-12-26', '09:00:00', '11:00:00', 'lucas.martins@gmail.com', 1),
-(null, '0', 'Camila Ferreira', 'Teste de motores', '2024-12-27', '13:00:00', '15:30:00', 'camila.ferreira@gmail.com', 2),
+(null, '1', 'Camila Ferreira', 'Teste de motores', '2024-12-27', '13:00:00', '15:30:00', 'camila.ferreira@gmail.com', 2),
 (null, '1', 'Pedro Henrique', 'Atualização de sistemas', '2024-12-28', '10:30:00', '12:30:00', 'pedro.henrique@gmail.com', 1),
-(null, '0', 'Sofia Lima', 'Testes de sensores avançados', '2024-12-29', '14:30:00', '16:30:00', 'sofia.lima@gmail.com', 2);
+(null, '1', 'Sofia Lima', 'Testes de sensores avançados', '2024-12-29', '14:30:00', '16:30:00', 'sofia.lima@gmail.com', 2);
 
 
 INSERT INTO resmat (id, qtd_uti, id_res, id_mat) 
